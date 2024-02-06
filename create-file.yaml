@@ -1,6 +1,7 @@
 ---
 - name: 'Create a file'
   hosts: node1
+  become_user: ansible
   tasks:
   - name: 'Create a file with name pilot'
     file:
