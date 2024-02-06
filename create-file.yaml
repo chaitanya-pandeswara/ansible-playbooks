@@ -1,0 +1,9 @@
+---
+- name: 'Create a file'
+  hosts: node1
+  tasks:
+  - name: 'Create a file with name pilot'
+    file:
+      path: /home/ansible/pilot
+      state: touch
+      mode: 0744
